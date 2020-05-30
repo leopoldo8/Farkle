@@ -4,6 +4,7 @@ import { Grey } from './colors';
 
 const base = createGlobalStyle`
 body {
+  font-family: 'Red Hat Display';
   ${Paragraph}
   color: ${Grey};
 }
