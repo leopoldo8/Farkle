@@ -8,11 +8,13 @@ import Home from '@pages/home';
 
 const RouterConfig = () => (
   <Router>
-    <Switch>
-      <Route path="/">
-        <Home />
-      </Route>
-    </Switch>
+    <div id="PagesContainer">
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </div>
   </Router>
 );
 
