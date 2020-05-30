@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import styles from './App.module.css';
+import Router from './router';
+import { I18nextProvider } from 'react-i18next';
+import GlobalStyles from '@modules/globalStyles';
+import i18n from './i18n';
 
-function App() {
-    return (
-        <div className={styles.App}>
-            <header className={styles['App-header']}>
-                <img src={logo} className={styles['App-logo']} alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className={styles['App-link']}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
-}
+const Farkle = () => {
+  return (
+    <>
+      <GlobalStyles />
+      <I18nextProvider i18n={i18n}>
+        <Router />
+      </I18nextProvider>
+    </>
+  );
+};
 
-export default App;
+export default Farkle;
