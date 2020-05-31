@@ -1,10 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 import { Paragraph } from './typography';
-import { Grey, Black } from './colors';
+import { Gray, Black } from './colors';
+
+const TopPageBackground = '/static/images/TopPage.svg';
 
 const base = createGlobalStyle`
-html, body, #root {
+html, body, #root, .page {
   height: 100%;
+}
+
+#root {
+  overflow: hidden;
 }
 
 body {
@@ -14,8 +20,19 @@ body {
 }
 
 #PagesContainer {
-  background: ${Grey};
-  height: calc(100% - 73px);
+  background: ${Gray};
+  height: calc(100% - 90px);
+  position: relative;
+  margin-top: 17px;
+
+  #PagesTopClip {
+    position: absolute;
+    top: -26px;
+    width: 100%;
+    height: 26px;
+    background: url(${TopPageBackground}) no-repeat;
+    background-size: cover;
+  }
 }
 `;
 

@@ -1,0 +1,51 @@
+{
+  "enter": {
+    "title": "Entre em uma sala e comece a jogar agora!",
+    "fields": {
+      "username": {
+        "placeholder": "Digite um apelido...",
+        "errors": {
+          "required": "Por favor, digite um apelido.",
+          "invalid": "O apelido deve ter no máximo 16 caracteres."
+        }
+      },
+      "roomName": {
+        "placeholder": "Digite o nome da sala...",
+        "errors": {
+          "required": "Por favor, digite o nome da sala.",
+          "invalid": "Nome de sala inválido."
+        }
+      }
+    },
+    "button": "Entrar",
+    "link": "ou crie uma sala!"
+  },
+  "create": {
+    "title": "Crie uma sala para jogar com seus amigos!",
+    "fields": {
+      "username": {
+        "placeholder": "Digite um apelido...",
+        "errors": {
+          "required": "Por favor, digite um apelido.",
+          "invalid": "O apelido deve ter no máximo 16 caracteres."
+        }
+      },
+      "roomName": {
+        "placeholder": "Digite o nome da sala...",
+        "errors": {
+          "required": "Por favor, digite o nome da sala.",
+          "invalid": "Nome de sala inválido."
+        }
+      },
+      "roomPassword": {
+        "placeholder": "Digite uma senha (opcional)...",
+        "errors": {
+          "minLength": "A senha deve ter no mínimo 8 caracteres.",
+          "invalid": "A senha deve conter entre 8 e 32 caracteres e ter pelo menos 1 dígito numérico."
+        }
+      }
+    },
+    "button": "Criar",
+    "link": "ou entre em uma sala!"
+  }
+}

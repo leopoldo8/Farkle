@@ -12,7 +12,7 @@ export const Container = styled.div`
   grid-template-areas: "right center left";
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  background: url(${TopBarBackground}) no-repeat;
+  background: url(${TopBarBackground});
   background-size: contain;
 `;
 

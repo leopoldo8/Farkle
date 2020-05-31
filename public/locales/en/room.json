@@ -1,0 +1,51 @@
+{
+  "enter": {
+    "title": "Join a room and start playing now!",
+    "fields": {
+      "username": {
+        "placeholder": "Enter a nickname...",
+        "errors": {
+          "required": "Please enter a username.",
+          "invalid": "The username must have a maximum of 16 characters."
+        }
+      },
+      "roomName": {
+        "placeholder": "Enter the room's name...",
+        "errors": {
+          "required": "Please enter the room name.",
+          "invalid": "Invalid room name."
+        }
+      }
+    },
+    "button": "Enter",
+    "link": "or create a room!"
+  },
+  "create": {
+    "title": "Create a room to play with your friends!",
+    "fields": {
+      "username": {
+        "placeholder": "Enter a nickname...",
+        "errors": {
+          "required": "Please enter a username.",
+          "invalid": "The username must have a maximum of 16 characters."
+        }
+      },
+      "roomName": {
+        "placeholder": "Enter the room's name...",
+        "errors": {
+          "required": "Please enter the room name.",
+          "invalid": "Invalid room name."
+        }
+      },
+      "roomPassword": {
+        "placeholder": "Enter a password (optional)...",
+        "errors": {
+          "minLength": "The password must have a minimum of 8 characters.",
+          "invalid": "Password must be between 8 and 32 characters long and include at least one numeric digit."
+        }
+      }
+    },
+    "button": "Create",
+    "link": "or enter a room! "
+  }
+}

@@ -1,11 +1,31 @@
-export const Title = `
-  font-weight: 600;
+export const Label = `
+  font-size: 18px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+`;
+
+export const ParagraphLarge = `
   font-size: 24px;
-  line-height: 32px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+`;
+
+export const ParagraphMedium = `
+  font-size: 16px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
 `;
 
 export const Paragraph = `
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
 `;
