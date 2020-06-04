@@ -11,6 +11,7 @@
         "alias": {
           "@components": "./src/components",
           "@assets": "./src/assets",
+          "@contexts": "./src/contexts",
           "@modules": "./src/modules",
           "@pages": "./src/pages",
           "@api": "./src/api",

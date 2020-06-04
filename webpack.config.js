@@ -42,6 +42,7 @@ module.exports = {
 		modules: [__dirname, 'app/components', 'node_modules'],
 		alias: {
 			"@components": "./src/components",
+			"@contexts": "./src/contexts",
 			"@assets": "./src/assets",
 			"@modules": "./src/modules",
 			"@pages": "./src/pages",

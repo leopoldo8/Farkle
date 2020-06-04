@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 100%;
   padding: 8px 16px;
   display: grid;
-  grid-template-areas: "right center left";
+  grid-template-areas: "left center right";
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   background: url(${TopBarBackground});
@@ -20,24 +20,26 @@ export const Logo = styled.a`
   height: 40px;
   width: 125px;
   background: url(${LogoURL}) no-repeat;
-  grid-area: center;
+  padding-bottom: 14px;
 `;
 
 export const Right = styled.div`
   grid-area: right;
-  width: 48px;
+  width: 100%;
+  min-width: 26px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `;
 
 export const Left = styled.div`
   grid-area: left;
-  width: 48px;
+  width: 100%;
+  min-width: 26px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `;
 
