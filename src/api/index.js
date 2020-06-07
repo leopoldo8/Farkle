@@ -15,7 +15,7 @@ class API {
   }
 
   static host() {
-    return process.env.API_BASE_URL;
+    return process.env.REACT_APP_API_BASE_URL;
   }
 
   static handleError(error) {
@@ -32,7 +32,7 @@ class API {
   }
 
   readCredentials() {
-    this.token = localStorage.getItem(``) || '';
+    this.token = localStorage.getItem(this.authBearerKey) || '';
   }
 
   resetCredentials() {

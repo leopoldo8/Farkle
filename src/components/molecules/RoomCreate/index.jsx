@@ -20,8 +20,8 @@ const RoomCreate = ({ handleCreateSubmit }) => {
   const tRoomPassword = (properties) => t(`fields.roomPassword.${properties}`);
 
   const validationCreateSchema = Yup.object({
-    username: Yup.string().max(16, tUsername('errors.invalid')).required(tUsername('errors.required')),
-    roomName: Yup.string(tRoomName('errors.invalid')).required(tRoomName('errors.required')),
+    username: Yup.string().max(16, tUsername('errors.maxLength')).required(tUsername('errors.required')),
+    roomName: Yup.string().max(25, tRoomName('errors.maxLength')).matches(/^[a-zA-Z ]+$/, tRoomName('errors.invalid')).required(tRoomName('errors.required')),
     roomPassword: Yup.string().min(8, tRoomPassword('errors.minLength')).matches(/^(?=.*\d).{8,32}$/, tRoomPassword('errors.invalid')).optional()
   });
 

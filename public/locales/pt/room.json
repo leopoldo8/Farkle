@@ -1,4 +1,17 @@
 {
+  "waiting": {
+    "loading": {
+      "title": "Entrando na sala...",
+      "description": "A sala está carregando, por favor espere um momento..."
+    },
+    "players": {
+      "title": "Jogadores na sala",
+      "status": {
+        "preparing": "Preparando...",
+        "ready": "Pronto!"
+      }
+    }
+  },
   "enter": {
     "title": "Entre em uma sala e comece a jogar agora!",
     "fields": {
@@ -6,14 +19,15 @@
         "placeholder": "Digite um apelido...",
         "errors": {
           "required": "Por favor, digite um apelido.",
-          "invalid": "O apelido deve ter no máximo 16 caracteres."
+          "maxLength": "O apelido deve ter no máximo 16 caracteres."
         }
       },
       "roomName": {
         "placeholder": "Digite o nome da sala...",
         "errors": {
           "required": "Por favor, digite o nome da sala.",
-          "invalid": "Nome de sala inválido."
+          "maxLength": "O nome da sala deve ter no máximo 25 caracteres.",
+          "invalid": "O nome da sala deve conter apenas letras e espaços."
         }
       }
     },
@@ -27,14 +41,15 @@
         "placeholder": "Digite um apelido...",
         "errors": {
           "required": "Por favor, digite um apelido.",
-          "invalid": "O apelido deve ter no máximo 16 caracteres."
+          "maxLength": "O apelido deve ter no máximo 16 caracteres."
         }
       },
       "roomName": {
         "placeholder": "Digite o nome da sala...",
         "errors": {
           "required": "Por favor, digite o nome da sala.",
-          "invalid": "Nome de sala inválido."
+          "maxLength": "O nome da sala deve ter no máximo 25 caracteres.",
+          "invalid": "O nome da sala deve conter apenas letras e espaços."
         }
       },
       "roomPassword": {

@@ -1,4 +1,17 @@
 {
+  "waiting": {
+    "loading": {
+      "title": "Entering the room...",
+      "description": "The room is loading, wait a moment..."
+    },
+    "players": {
+      "title": "Players in this room",
+      "status": {
+        "preparing": "Preparing...",
+        "ready": "Ready!"
+      }
+    }
+  },
   "enter": {
     "title": "Join a room and start playing now!",
     "fields": {
@@ -6,14 +19,15 @@
         "placeholder": "Enter a nickname...",
         "errors": {
           "required": "Please enter a username.",
-          "invalid": "The username must have a maximum of 16 characters."
+          "maxLength": "The username must have a maximum of 16 characters."
         }
       },
       "roomName": {
         "placeholder": "Enter the room's name...",
         "errors": {
           "required": "Please enter the room name.",
-          "invalid": "Invalid room name."
+          "maxLength": "The room name must have a maximum of 25 characters.",
+          "invalid": "The room name must only contains alphabetic characters and spaces."
         }
       }
     },
@@ -27,14 +41,15 @@
         "placeholder": "Enter a nickname...",
         "errors": {
           "required": "Please enter a username.",
-          "invalid": "The username must have a maximum of 16 characters."
+          "maxLength": "The username must have a maximum of 16 characters."
         }
       },
       "roomName": {
         "placeholder": "Enter the room's name...",
         "errors": {
           "required": "Please enter the room name.",
-          "invalid": "Invalid room name."
+          "maxLength": "The room name must have a maximum of 25 characters.",
+          "invalid": "The room name must only contains alphabetic characters and spaces."
         }
       },
       "roomPassword": {
