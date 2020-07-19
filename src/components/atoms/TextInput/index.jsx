@@ -19,11 +19,15 @@ const TextInput = ({ error, ...props }) => {
 }
 
 TextInput.propTypes = {
-  error: PropTypes.string
+  error: PropTypes.string,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  elevation: PropTypes.oneOf(['none', 'normal'])
 }
 
 TextInput.defaultProps = {
-  error: null
+  error: null,
+  size: 'medium',
+  elevation: 'normal'
 }
 
 export default TextInput;

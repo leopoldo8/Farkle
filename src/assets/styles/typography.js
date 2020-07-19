@@ -45,3 +45,11 @@ export const Paragraph = `
   font-style: normal;
   font-weight: normal;
 `;
+
+export const ParagraphSmall = `
+  font-size: 11px;
+  line-height: 11px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+`;

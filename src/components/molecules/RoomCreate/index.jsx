@@ -21,8 +21,8 @@ const RoomCreate = ({ handleCreateSubmit }) => {
 
   const validationCreateSchema = Yup.object({
     username: Yup.string().max(16, tUsername('errors.maxLength')).required(tUsername('errors.required')),
-    roomName: Yup.string().max(25, tRoomName('errors.maxLength')).matches(/^[a-zA-Z ]+$/, tRoomName('errors.invalid')).required(tRoomName('errors.required')),
-    roomPassword: Yup.string().min(8, tRoomPassword('errors.minLength')).matches(/^(?=.*\d).{8,32}$/, tRoomPassword('errors.invalid')).optional()
+    roomName: Yup.string().max(25, tRoomName('errors.maxLength')).required(tRoomName('errors.required')),
+    roomPassword: Yup.string().min(3, tRoomPassword('errors.minLength')).optional()
   });
 
   return (
@@ -30,6 +30,8 @@ const RoomCreate = ({ handleCreateSubmit }) => {
       initialValues={{ username: '', roomName: '', roomPassword: '' }}
       onSubmit={handleCreateSubmit}
       validationSchema={validationCreateSchema}
+      validateOnChange={false}
+      validateOnBlur={false}
     >
     {({ handleSubmit, handleChange, values, errors }) => (
       <form onSubmit={handleSubmit}>

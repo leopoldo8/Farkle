@@ -4,9 +4,19 @@ import { DarkGray, Error } from '@assets/styles/colors';
 
 export const Input = styled.input`
   ${Paragraph}
-  height: 40px;
+  height: ${props => {
+    switch (props.size) {
+      default:
+      case 'medium':
+        return '40px';
+      case 'large':
+        return '48px';
+    }
+  }};
   background: #FFFFFF;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  ${props => props.elevation !== 'none' && `
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  `}
   border-radius: 25px;
   outline: 0;
   padding: 0 24px;

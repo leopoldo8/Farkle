@@ -10,7 +10,11 @@
         "preparing": "Preparando...",
         "ready": "Pronto!"
       }
-    }
+    },
+    "chat": {
+      "title": "Chat"
+    },
+    "button": "Jogar"
   },
   "enter": {
     "title": "Entre em uma sala e comece a jogar agora!",
@@ -55,7 +59,7 @@
       "roomPassword": {
         "placeholder": "Digite uma senha (opcional)...",
         "errors": {
-          "minLength": "A senha deve ter no mínimo 8 caracteres.",
+          "minLength": "A senha deve ter no mínimo 3 caracteres.",
           "invalid": "A senha deve conter entre 8 e 32 caracteres e ter pelo menos 1 dígito numérico."
         }
       }

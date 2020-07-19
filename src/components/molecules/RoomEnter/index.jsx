@@ -20,7 +20,7 @@ const RoomEnter = ({ handleEnterSubmit }) => {
 
   const validationEnterSchema = Yup.object({
     username: Yup.string().max(16, tUsername('errors.maxLength')).required(tUsername('errors.required')),
-    roomName: Yup.string().max(25, tRoomName('errors.maxLength')).matches(/^[a-zA-Z ]+$/, tRoomName('errors.invalid')).required(tRoomName('errors.required'))
+    roomName: Yup.string().max(25, tRoomName('errors.maxLength')).required(tRoomName('errors.required'))
   });
 
   return (
@@ -28,6 +28,8 @@ const RoomEnter = ({ handleEnterSubmit }) => {
       initialValues={{ username: '', roomName: '' }}
       onSubmit={handleEnterSubmit}
       validationSchema={validationEnterSchema}
+      validateOnChange={false}
+      validateOnBlur={false}
     >
     {({ handleSubmit, handleChange, values, errors }) => (
       <form onSubmit={handleSubmit}>

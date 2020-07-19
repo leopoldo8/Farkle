@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { DisplayLarge, DisplayMedium } from '@assets/styles/typography';
 import { DoveGray, White, Gray } from '@assets/styles/colors';
+import { MediumElevation } from '@assets/styles/elevations';
 
 export const Title = styled.h1`
   ${DisplayLarge};
   color: ${DoveGray};
   margin-bottom: 8px;
+  text-indent: 16px;
 `;
 
 export const Description = styled.h2`
@@ -37,6 +39,7 @@ export const ContentWrapper = styled.div`
 export const PlayersWrapper = styled.div`
   background: ${White};
   border: 1px solid ${Gray};
+  margin-bottom: 53px;
 `;
 
 export const PlayerRow = styled.div`
@@ -55,4 +58,19 @@ export const PlayerLevel = styled.p`
 
 export const PlayerStatus = styled.p`
 
+`;
+
+export const ChatWrapper = styled.div`
+  width: calc(100% - 32px);
+  height: 343px;
+  background: ${White};
+  border-radius: 24px;
+  ${MediumElevation};
+  align-self: center;
+  margin-bottom: 40px;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 172px;
+  align-self: center;
 `;

@@ -10,7 +10,11 @@
         "preparing": "Preparing...",
         "ready": "Ready!"
       }
-    }
+    },
+    "chat": {
+      "title": "Chat"
+    },
+    "button": "Play"
   },
   "enter": {
     "title": "Join a room and start playing now!",
@@ -55,7 +59,7 @@
       "roomPassword": {
         "placeholder": "Enter a password (optional)...",
         "errors": {
-          "minLength": "The password must have a minimum of 8 characters.",
+          "minLength": "The password must have a minimum of 3 characters.",
           "invalid": "Password must be between 8 and 32 characters long and include at least one numeric digit."
         }
       }

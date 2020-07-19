@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+
+import UserContext from '@contexts/userContext';
 
 import RoomEnter from '@components/molecules/RoomEnter';
 import RoomCreate from '@components/molecules/RoomCreate';
@@ -15,6 +17,7 @@ import {
 } from './style';
 
 const RoomHub = () => {
+  const { dispatch } = useContext(UserContext);
   const [hubType, setHubType] = useState('enter');
   const { t } = useTranslation('room');
   const history = useHistory();
@@ -28,24 +31,18 @@ const RoomHub = () => {
   }
 
   const handleEnterSubmit = async (data) => {
-    try {
-      const response = await RoomService.create(data);
-      if (response.status === 200) {
-        history.push(`room/${response.data._id}`);
-      }
-    } catch(e) {
-      console.log(e);
+    const response = await RoomService.enter(data);
+    if (response.status === 200) {
+      dispatch({ type: 'SET_USER', payload: { username: data.username }});
+      history.push(`room/${response.data.id}`);
     }
   }
 
   const handleCreateSubmit = async (data) => {
-    try {
-      const response = await RoomService.create(data);
-      if (response.status === 201) {
-        history.push(`room/${response.data._id}`, { isOwner: true });
-      }
-    } catch(e) {
-      console.log(e);
+    const response = await RoomService.create(data);
+    if (response.status === 201) {
+      dispatch({ type: 'SET_USER', payload: { username: data.username }});
+      history.push(`room/${response.data.id}`);
     }
   }
 

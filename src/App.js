@@ -3,6 +3,9 @@ import i18n from './i18n';
 import Router from './router';
 import { I18nextProvider } from 'react-i18next';
 import { AppProvider } from '@contexts/appContext';
+import { UserProvider } from '@contexts/userContext';
+import { ToastContainer, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import GlobalStyles from '@modules/globalStyles';
 import Topbar from '@components/atoms/Topbar';
@@ -19,8 +22,11 @@ const Farkle = () => {
           <Modal>
             <AuthModal />
           </Modal>
+          <ToastContainer transition={Slide} />
           <Topbar />
-          <Router />
+          <UserProvider>
+            <Router />
+          </UserProvider>
         </AppProvider>
       </I18nextProvider>
     </Suspense>
